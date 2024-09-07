@@ -578,6 +578,25 @@ margin-top: -190px;
                     margin-left:280px;
                 }
                     }
+
+                @media (max-width: 400px) {
+                    .left-top-side{
+                        height: 90px;
+                        width:90px;
+                        margin-left:40px;
+                    }
+                
+                .right-down-side{
+                    height: 90px;
+                    width:90px;
+                    margin-left:275px;
+                }
+                .right-down-side1{
+                    height: 90px;
+                    width:90px;
+                    margin-left:275px;
+                }
+                    }
     
 
 
