@@ -318,7 +318,7 @@ p {
     .welcome-button,
     .welcome-button2 {
         font-size: 14px; /* Adjust font size */
-        padding: 12px 23px; /* Adjust padding */
+        padding: 12px 26px; /* Adjust padding */
     }
     .welcome-button{
         margin-left: 30%;
@@ -332,7 +332,7 @@ p {
     .welcome-button,
     .welcome-button2 {
         font-size: 14px; /* Further adjust font size */
-             padding: 10px 23px; /* Further adjust padding */
+             padding: 10px 26px; /* Further adjust padding */
     }
     .welcome-button{
         margin-left: 23%;
@@ -349,7 +349,7 @@ p {
 .welcome-button,
 .welcome-button2 {
     font-size: 14px; /* Further adjust font size */
-    padding: 10px 23px; /* Further adjust padding */
+    padding: 10px 26px; /* Further adjust padding */
 }
 .welcome-button{
     margin-left: 17%;
