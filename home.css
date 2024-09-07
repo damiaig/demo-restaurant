@@ -371,17 +371,7 @@ p {
     }
     .welcome-button2{
         margin-left: 17%;
-    
-            font-family: 'didact_gothicregular', sans-serif;
-            border: none;
-            outline: none;
-            box-shadow: none;
-            color: inherit;
-            font: inherit;
-            cursor: pointer;
-            font-size: 15px;
-            background-color: #FFD230;
-            margin-top: 20px;
+            margin-top: 7px;
         
     }
     }
