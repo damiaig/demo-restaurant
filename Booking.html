@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://db.onlinewebfonts.com/c/353b79b2ea9db02690b55e55fb094e08?family=Bold" rel="stylesheet"
+        type="text/css" />
+    <link href="booking.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <!-- Hamburger Button -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Left Menu Bar -->
+        <nav class="nav-container-left">
+            <ul class="toolbar-container">
+                <li><a class="head1" href="startes.html#starters" class="toolbar">STARTERS</a></li>
+                <li><a class="head1" href="startes.html#main-course" class="toolbar">MAIN COURSE</a></li>
+                <li><a class="head1" href="startes.html#side-dishes" class="toolbar">SIDE DISHES</a></li>
+            </ul>
+        </nav>
+
+        <img src="taco-icon-design-template-taco-black-icon-isolated-on-a-white-background-vector-removebg-preview.png"
+            alt="logo" class="logo">
+
+        <!-- Right Menu Bar -->
+        <nav class="nav-container-right">
+            <ul class="toolbar-container">
+                <li><a class="head1" href="startes.html#desserts" class="toolbar">DESSERTS</a></li>
+                <li><a class="head1" href="startes.html#beverages" class="toolbar">BEVERAGES</a></li>
+                <li><a class="head1" href="index.html" class="toolbar">HOME</a></li>
+            </ul>
+        </nav>
+
+        <!-- Full-Screen Menu Content -->
+        <nav class="menu-bar-content">
+            <ul class="toolbar-container">
+                <li><a class="head1" href="startes.html#starters" class="toolbar">STARTERS</a></li>
+                <li><a class="head1" href="startes.html#main-course" class="toolbar">MAIN COURSE</a></li>
+                <li><a class="head1" href="startes.html#side-dishes" class="toolbar">SIDE DISHES</a></li>
+                <li><a class="head1" href="startes.html#desserts" class="toolbar">DESSERTS</a></li>
+                <li><a class="head1" href="startes.html#beverages" class="toolbar">BEVERAGES</a></li>
+                <li><a class="head1" href="index.html" class="toolbar">HOME</a></li>
+            </ul>
+            <!-- Close Button -->
+            <div class="close-menu" onclick="closeMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+     <!-- Booking Form -->
+   
+        <h1 class="h1">Book a Table</h1>
+        <form id="booking-form" action="/submit-booking" method="POST" class="booking-form">
+            <h2 class="h2">Name</h2>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <div class="error-message" id="name-error">Please enter your name.</div>
+
+            <h2 class="h2">Country Code</h2>
+            <input list="country-codes" id="country-code" name="country-code" class="country-code-input" placeholder="Select your country code" required>
+            <datalist id="country-codes">
+                <!-- Country Codes Options -->
+                <option value="+1">United States (+1)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                <option value="+91">India (+91)</option>
+                <option value="+61">Australia (+61)</option>
+                <option value="+81">Japan (+81)</option>
+                <option value="+49">Germany (+49)</option>
+                <option value="+33">France (+33)</option>
+                <option value="+86">China (+86)</option>
+                <option value="+7">Russia (+7)</option>
+                <option value="+39">Italy (+39)</option>
+                <!-- Add more country codes as needed -->
+                <!-- You can copy the full list from your initial code -->
+            </datalist>
+            <div class="error-message" id="country-code-error">Please select your country code.</div>
+
+            <h2 class="h2">Phone Number</h2>
+            <input type="text" id="phone-number" name="phone-number" class="phone-number-input" placeholder="Enter your phone number" required>
+            <div class="error-message" id="phone-error">Please enter a valid phone number.</div>
+
+            <h2 class="h2">Email</h2>
+            <input type="email" id="email" name="email" class="email" placeholder="Enter your email" required>
+            <div class="error-message" id="email-error">Please enter a valid email address.</div>
+
+            <h2 class="h2">Number of People</h2>
+            <input type="number" id="people" name="people" class="people-input" min="1" placeholder="Number of people" required>
+            <div class="error-message" id="people-error">Please enter the number of people.</div>
+
+            <h2 class="h2">Booking Date</h2>
+            <input type="date" id="date" name="date" class="date-input" required>
+            <div class="error-message" id="date-error">Please select a booking date.</div>
+
+        
+<div class="time-input-section">
+    <h2 class="h2">Time</h2>
+    <div class="time-input-wrapper">
+        <select id="hours" name="hours" class="time-input" required>
+            <!-- Hours from 10 AM to 11 PM -->
+            <option value="">Select Hour</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+     
+        <select id="minutes" name="minutes" class="time-input" required>
+            <!-- Minutes in 5-minute intervals -->
+            <option value="">Select Minute</option>
+            <option value="00">00</option>
+            <option value="00">01</option>
+            <option value="00">02</option>
+            <option value="00">03</option>
+            <option value="00">04</option>
+            <option value="05">05</option>
+            <option value="00">06</option>
+            <option value="00">07</option>
+            <option value="00">08</option>
+            <option value="00">09</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="55">55</option>
+        </select>
+
+       
+        <select id="ampm" name="ampm" class="time-input"  required>
+            <option value="">AM/PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+    </div> 
+    <div class="error-message" id="time-error">Please select a booking time.</div>
+</div>
+
+           
+<input type="submit" class="submit-button booking-button" value="Submit">
+<div id="response-message" style="display:none; font-weight: 300; color: green;    font-family: 'didact_gothicregular', sans-serif;; "></div>
+</form>
+<script>
+// Function to update the phone number with the selected country code
+function updatePhoneNumber() {
+    const countrySelect = document.getElementById('country-code');
+    const phoneInput = document.getElementById('phone-number');
+    const selectedCode = countrySelect.value;
+
+    if (selectedCode) {
+        phoneInput.value = selectedCode + ' ';
+        phoneInput.focus();
+    }
+}
+
+// Validate the form fields
+function validateForm() {
+    let valid = true;
+
+    const name = document.getElementById('name');
+    const countryCode = document.getElementById('country-code');
+    const phoneNumber = document.getElementById('phone-number');
+    const email = document.getElementById('email');
+    const people = document.getElementById('people');
+    const date = document.getElementById('date');
+    const hours = document.getElementById('hours');
+    const minutes = document.getElementById('minutes');
+    const ampm = document.getElementById('ampm');
+
+    const nameError = document.getElementById('name-error');
+    const countryCodeError = document.getElementById('country-code-error');
+    const phoneError = document.getElementById('phone-error');
+    const emailError = document.getElementById('email-error');
+    const peopleError = document.getElementById('people-error');
+    const dateError = document.getElementById('date-error');
+    const timeError = document.getElementById('time-error');
+
+    // Name Validation
+    if (name.value.trim() === "") {
+        name.classList.add('error');
+        nameError.style.display = 'block';
+        valid = false;
+    } else {
+        name.classList.remove('error');
+        nameError.style.display = 'none';
+    }
+
+    // Country Code Validation
+    if (countryCode.value.trim() === "") {
+        countryCode.classList.add('error');
+        countryCodeError.style.display = 'block';
+        valid = false;
+    } else {
+        countryCode.classList.remove('error');
+        countryCodeError.style.display = 'none';
+    }
+
+    // Phone Number Validation
+    const phonePattern = /^\+\d{1,3}\s?\d{4,14}$/;
+    if (!phonePattern.test(phoneNumber.value.trim())) {
+        phoneNumber.classList.add('error');
+        phoneError.style.display = 'block';
+        valid = false;
+    } else {
+        phoneNumber.classList.remove('error');
+        phoneError.style.display = 'none';
+    }
+
+    // Email Validation
+    const emailPattern = /\S+@\S+\.\S+/;
+    if (!emailPattern.test(email.value.trim())) {
+        email.classList.add('error');
+        emailError.style.display = 'block';
+        valid = false;
+    } else {
+        email.classList.remove('error');
+        emailError.style.display = 'none';
+    }
+
+    // Number of People Validation
+    if (people.value.trim() === "" || parseInt(people.value) < 1) {
+        people.classList.add('error');
+        peopleError.style.display = 'block';
+        valid = false;
+    } else {
+        people.classList.remove('error');
+        peopleError.style.display = 'none';
+    }
+
+    // Booking Date Validation
+    if (date.value.trim() === "") {
+        date.classList.add('error');
+        dateError.style.display = 'block';
+        valid = false;
+    } else {
+        date.classList.remove('error');
+        dateError.style.display = 'none';
+    }
+
+    // Time Validation
+    if (hours.value.trim() === "" || minutes.value.trim() === "" || ampm.value.trim() === "") {
+        hours.classList.add('error');
+        minutes.classList.add('error');
+        ampm.classList.add('error');
+        timeError.style.display = 'block';
+        valid = false;
+    } else {
+        const selectedHour = parseInt(hours.value);
+        const selectedAMPM = ampm.value;
+
+        if ((selectedAMPM === 'AM' && (selectedHour < 9 || selectedHour > 11)) ||
+            (selectedAMPM === 'PM' && (selectedHour < 1 || selectedHour > 10))) {
+            hours.classList.add('error');
+            ampm.classList.add('error');
+            timeError.textContent = 'Please select a valid time for AM/PM.';
+            timeError.style.display = 'block';
+            valid = false;
+        } else {
+            hours.classList.remove('error');
+            ampm.classList.remove('error');
+            timeError.style.display = 'none';
+        }
+    }
+
+    return valid;
+}
+
+// Handle form submission
+function submitForm(event) {
+    event.preventDefault();
+
+    if (validateForm()) {
+        // Display success message
+        const responseMessage = document.getElementById('response-message');
+        responseMessage.textContent = 'Thank you for booking with us! Your reservation has been confirmed.';
+        responseMessage.style.color = 'green';
+        responseMessage.style.display = 'block';
+
+        // Clear the form and hide the message after 3 seconds
+        setTimeout(() => {
+            responseMessage.style.display = 'none';
+            document.getElementById('booking-form').reset();
+        }, 3000);
+    } else {
+        // Display error message
+        const responseMessage = document.getElementById('response-message');
+        responseMessage.textContent = 'Please correct the errors in the form.';
+        responseMessage.style.color = 'red';
+        responseMessage.style.display = 'block';
+    }
+}
+
+// Handle focus events to remove error styles
+document.querySelectorAll('.time-input').forEach(input => {
+    input.addEventListener('focus', () => {
+        input.classList.remove('error');
+        document.getElementById('time-error').style.display = 'none';
+    });
+});
+
+document.getElementById('booking-form').addEventListener('submit', submitForm);
+
+// Handle focus and blur events
+function handleFocus(event) {
+    event.target.classList.add('glow');
+}
+
+function handleBlur(event) {
+    if (event.target.value.trim() !== "" && validateInput(event.target)) {
+        event.target.classList.remove('glow');
+    }
+}
+
+// Handle input events
+function handleInput(event) {
+    if (validateInput(event.target)) {
+        event.target.classList.remove('glow');
+    } else {
+        event.target.classList.add('glow');
+    }
+}
+
+// Validate individual input fields
+function validateInput(input) {
+    switch (input.id) {
+        case 'name':
+            return input.value.trim() !== "";
+        case 'country-code':
+            return input.value.trim() !== "";
+        case 'phone-number':
+            return /^\+\d{1,3}\s?\d{4,14}$/.test(input.value);
+        case 'email':
+            return /\S+@\S+\.\S+/.test(input.value);
+        case 'people':
+            return input.value.trim() !== "" && parseInt(input.value) > 0;
+        case 'date':
+            return input.value.trim() !== "";
+        case 'hours':
+        case 'minutes':
+        case 'ampm':
+            return input.value.trim() !== "";
+        default:
+            return true;
+    }
+}
+
+// Event listeners
+document.getElementById('country-code').addEventListener('change', updatePhoneNumber);
+
+const inputs = document.querySelectorAll('#booking-form input');
+inputs.forEach(input => {
+    input.addEventListener('focus', handleFocus);
+    input.addEventListener('blur', handleBlur);
+    input.addEventListener('input', handleInput);
+});
+
+// Toggle Menu Functions
+function toggleMenu() {
+    document.querySelector('.menu-bar-content').classList.toggle('active');
+    document.querySelector('.hamburger-menu').classList.toggle('active');
+}
+
+function closeMenu() {
+    document.querySelector('.menu-bar-content').classList.remove('active');
+    document.querySelector('.hamburger-menu').classList.remove('active');
+}
+</script>
+</body>
+
+</html>

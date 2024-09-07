@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://db.onlinewebfonts.com/c/353b79b2ea9db02690b55e55fb094e08?family=Bold" rel="stylesheet"
+        type="text/css" />
+    <link href="home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <!-- Hamburger Button -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Left Menu Bar -->
+        <nav class="nav-container-left">
+            <ul class="toolbar-container">
+                <li><a class="head1" href="startes.html#starters" class="toolbar">STARTERS</a></li>
+                <li><a class="head1" href="startes.html#main-course" class="toolbar">MAIN COURSE</a></li>
+                <li><a class="head1" href="startes.html#side-dishes" class="toolbar">SIDE DISHES</a></li>
+            </ul>
+        </nav>
+
+        <img src="taco-icon-design-template-taco-black-icon-isolated-on-a-white-background-vector-removebg-preview.png"
+            alt="logo" class="logo">
+
+        <!-- Right Menu Bar -->
+        <nav class="nav-container-right">
+            <ul class="toolbar-container">
+                <li><a class="head1" href="startes.html#desserts" class="toolbar">DESSERTS</a></li>
+                <li><a class="head1" href="startes.html#beverages" class="toolbar">BEVERAGES</a></li>
+                <li><a class="head1" href="index.html" class="toolbar">HOME</a></li>
+            </ul>
+        </nav>
+
+        <!-- Full-Screen Menu Content -->
+        <nav class="menu-bar-content">
+            <ul class="toolbar-container">
+                <li><a class="head1" href="startes.html#starters" class="toolbar">STARTERS</a></li>
+                <li><a class="head1" href="startes.html#main-course" class="toolbar">MAIN COURSE</a></li>
+                <li><a class="head1" href="startes.html#side-dishes" class="toolbar">SIDE DISHES</a></li>
+                <li><a class="head1" href="startes.html#desserts" class="toolbar">DESSERTS</a></li>
+                <li><a class="head1" href="startes.html#beverages" class="toolbar">BEVERAGES</a></li>
+                <li><a class="head1" href="index.html" class="toolbar">HOME</a></li>
+            </ul>
+            <!-- Close Button -->
+            <div class="close-menu" onclick="closeMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="welcome-page">
+        <br>
+        <h1 class="h1">Dami's Delicacy</h1>
+        <p class="p1">Delicious food for every mood</p>
+        <div class="img-box1">
+            <a class="link1" href="startes.html"><button class="welcome-button"><p>DiSCOVER THE<br>MENU</p></button></a>
+            <a class="link1" href="Booking.html"><button class="welcome-button2"><p>BOOK A <br>RESERVERVTION</p></button></a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-bar-content').classList.toggle('active');
+            document.querySelector('.hamburger-menu').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.querySelector('.menu-bar-content').classList.remove('active');
+            document.querySelector('.hamburger-menu').classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
