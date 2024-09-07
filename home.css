@@ -291,6 +291,25 @@ p {
     }
 }
 
+
+@media (max-width: 640px) {
+    .img-box1 {
+        margin-left: 45px; /* 95px - 10px */
+    }
+}
+
+
+@media (max-width: 540px) {
+    .img-box1 {
+        margin-left: 35px; /* 95px - 10px */
+    }
+}
+
+@media (max-width: 460px) {
+    .img-box1 {
+        margin-left: 25px; /* 95px - 10px */
+    }
+}
 /* Media queries for viewport widths 1000px and below */
 @media (max-width: 1000px) {
     .h1{
@@ -336,3 +355,33 @@ p {
     margin-left: 17%;
 }
 }
+
+@media (max-width: 450px){
+    .h1{
+        font-size: 40px;
+    }
+    
+    .welcome-button,
+    .welcome-button2 {
+        font-size: 14px; /* Further adjust font size */
+        padding: 10px 15px; /* Further adjust padding */
+    }
+    .welcome-button{
+        margin-left: 17%;
+    }
+    .welcome-button2{
+        margin-left: 17%;
+    
+            font-family: 'didact_gothicregular', sans-serif;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            color: inherit;
+            font: inherit;
+            cursor: pointer;
+            font-size: 15px;
+            background-color: #FFD230;
+            margin-top: 20px;
+        
+    }
+    }
