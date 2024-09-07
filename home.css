@@ -332,7 +332,7 @@ p {
     .welcome-button,
     .welcome-button2 {
         font-size: 14px; /* Further adjust font size */
-        padding: 10px 15px; /* Further adjust padding */
+             padding: 10px 18.5px; /* Further adjust padding */
     }
     .welcome-button{
         margin-left: 23%;
