@@ -570,12 +570,12 @@ margin-top: -190px;
                 .right-down-side{
                     height: 90px;
                     width:90px;
-                    margin-left:330px;
+                    margin-left:300px;
                 }
                 .right-down-side1{
                     height: 90px;
                     width:90px;
-                    margin-left:330px;
+                    margin-left:300px;
                 }
                     }
     
@@ -682,12 +682,12 @@ margin-left: 0px;
 
 @media (max-width: 450px) {
     .h1 {
-        margin-left: -85px;
+        margin-left: -100px;
     }
 }
 @media (max-width: 440px) {
 
 .header-container{width: 100%;}
-    .header-container2{margin-top: 760px ;
+    .header-container2{margin-top: 820px ;
         width: 100%;
     }}
