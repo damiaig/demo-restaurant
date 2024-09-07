@@ -301,13 +301,13 @@ p {
 
 @media (max-width: 540px) {
     .img-box1 {
-        margin-left: 35px; /* 95px - 10px */
+        margin-left: 40px; /* 95px - 10px */
     }
 }
 
 @media (max-width: 460px) {
     .img-box1 {
-        margin-left: 25px; /* 95px - 10px */
+        margin-left: 35px; /* 95px - 10px */
     }
 }
 /* Media queries for viewport widths 1000px and below */
