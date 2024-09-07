@@ -541,7 +541,7 @@ margin-top: -190px;
                 .left-top-side{
                     height: 100px;
                     width:100px;
-                    margin-left:60px;
+                    margin-left:40px;
                 }
             
               
@@ -564,7 +564,7 @@ margin-top: -190px;
                     .left-top-side{
                         height: 90px;
                         width:90px;
-                        margin-left:60px;
+                        margin-left:40px;
                     }
                 
                 .right-down-side{
@@ -685,3 +685,9 @@ margin-left: 0px;
         margin-left: -85px;
     }
 }
+@media (max-width: 440px) {
+
+.header-container{width: 100%;}
+    .header-container2{margin-top: 760px ;
+        width: 100%;
+    }}
