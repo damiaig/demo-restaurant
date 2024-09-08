@@ -308,7 +308,7 @@ p {
 
 @media (max-width: 460px) {
     .img-box1 {
-        margin-left: 10px; /* 95px - 10px */
+        margin-left: 25px; /* 95px - 10px */
     }
 
 }
@@ -490,7 +490,7 @@ margin-left: 930px;
     
             @media (max-width: 400px) {
                 .material-symbols-outlined.icon-right {
-                    margin-left: 270px; /* Keep at 350px for smaller screens */
+                    margin-left: 260px; /* Keep at 350px for smaller screens */
                 }
             }
     
