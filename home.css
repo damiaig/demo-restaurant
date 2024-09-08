@@ -481,12 +481,18 @@ margin-left: 930px;
             }
         }
         
-        @media (max-width: 450px) {
-            .material-symbols-outlined.icon-right {
-                margin-left: 320px; /* Keep at 350px for smaller screens */
+         @media (max-width: 450px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 310px; /* Keep at 350px for smaller screens */
+                }
             }
-        }
-
+    
+            @media (max-width: 400px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 300px; /* Keep at 350px for smaller screens */
+                }
+            }
+    
 
 /* Show SVG and adjust margin for different screen widths */
 @media (max-width: 1100px) {
