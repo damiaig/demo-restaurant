@@ -308,7 +308,7 @@ p {
 
 @media (max-width: 460px) {
     .img-box1 {
-        margin-left: 30px; /* 95px - 10px */
+        margin-left: 10px; /* 95px - 10px */
     }
 
 }
@@ -484,13 +484,13 @@ margin-left: 930px;
         
          @media (max-width: 450px) {
                 .material-symbols-outlined.icon-right {
-                    margin-left: 310px; /* Keep at 350px for smaller screens */
+                    margin-left: 290px; /* Keep at 350px for smaller screens */
                 }
             }
     
             @media (max-width: 400px) {
                 .material-symbols-outlined.icon-right {
-                    margin-left: 300px; /* Keep at 350px for smaller screens */
+                    margin-left: 270px; /* Keep at 350px for smaller screens */
                 }
             }
     
