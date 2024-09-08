@@ -363,4 +363,204 @@ padding: 20px;
 
 
 
-
+  
+.svg-icon{
+    margin-top: 1px;
+        display: none;
+    }
+    
+        .material-symbols-outlined2{
+            display: none; /* Show the icon on mobile view */
+       
+        }
+    
+        .material-symbols-outlined.icon-right {
+            display: none; /* Hidden by default */
+            position: absolute;
+    margin-left: 930px;
+            margin-top: 27px; /* Adjust the vertical position */
+        }
+    
+        @media (max-width: 1100px) {
+            .material-symbols-outlined2{
+               
+                display: inline-block; /* Show the icon on mobile view */
+    
+            }
+            .material-symbols-outlined.icon-right {
+                display: inline-block; /* Show the icon on mobile view */
+                margin-left: 940px;
+            top: -3px; /* Adjust the vertical position */
+            }}
+    
+    
+            @media (max-width: 1050px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 890px;
+                }
+            }
+            
+            @media (max-width: 1000px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 840px; /* 890 - 50 */
+                }
+            }
+            
+            @media (max-width: 950px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 790px; /* 840 - 50 */
+                }
+            }
+            
+            @media (max-width: 900px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 740px; /* 790 - 50 */
+                }
+            }
+            
+            @media (max-width: 850px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 690px; /* 740 - 50 */
+                }
+            }
+            
+            @media (max-width: 800px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 640px; /* 690 - 50 */
+                }
+            }
+            
+            @media (max-width: 750px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 590px; /* 640 - 50 */
+                }
+            }
+            
+            @media (max-width: 700px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 540px; /* 590 - 50 */
+                }
+            }
+            
+            @media (max-width: 650px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 490px; /* 540 - 50 */
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 440px; /* 490 - 50 */
+                }
+            }
+            
+            @media (max-width: 550px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 390px; /* 440 - 50 */
+                }
+            }
+            
+            @media (max-width: 500px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 350px; /* 390 - 50 */
+                }
+            }
+            
+            @media (max-width: 450px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 320px; /* Keep at 350px for smaller screens */
+                }
+            }
+    
+    
+    /* Show SVG and adjust margin for different screen widths */
+    @media (max-width: 1100px) {
+        .svg-icon {
+            display: inline-block;
+            margin-left: -870px; /* Default margin for widths <= 1100px */
+        }
+    }
+    
+    @media (max-width: 1050px) {
+        .svg-icon {
+            margin-left: -820px;
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        .svg-icon {
+            margin-left: -770px;
+        }
+    }
+    
+    @media (max-width: 950px) {
+        .svg-icon {
+            margin-left: -720px;
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .svg-icon {
+            margin-left: -670px;
+        }
+    }
+    
+    @media (max-width: 850px) {
+        .svg-icon {
+            margin-left: -620px;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .svg-icon {
+            margin-left: -570px;
+        }
+    }
+    
+    @media (max-width: 750px) {
+        .svg-icon {
+            margin-left: -520px;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .svg-icon {
+            margin-left: -470px;
+        }
+    }
+    
+    @media (max-width: 650px) {
+        .svg-icon {
+            margin-left: -420px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .svg-icon {
+            margin-left: -370px;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        .svg-icon {
+            margin-left: -320px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .svg-icon {
+            margin-left: -270px;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        .svg-icon {
+            margin-left: -220px;
+        }
+    }
+    
+    /* Ensure the SVG icon is responsive */
+    
+               
+         
+        
