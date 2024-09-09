@@ -569,6 +569,8 @@ margin-bottom: 20px;}
 
 
 
+
+
                 @media (max-width: 450px) {
                     .left-top-side{
                         height: 90px;
@@ -579,12 +581,12 @@ margin-bottom: 20px;}
                 .right-down-side{
                     height: 90px;
                     width:90px;
-                    margin-left:300px;
+                    margin-left:275px;
                 }
                 .right-down-side1{
                     height: 90px;
                     width:90px;
-                    margin-left:300px;
+                    margin-left:275px;
                 }
                     }
     
@@ -697,7 +699,7 @@ margin-left: 0px;
 @media (max-width: 440px) {
 
 .header-container{width: 100%;}
-    .header-container2{margin-top: 820px ;
+    .header-container2{margin-top: 1020px ;
         width: 100%;
     }}
 
@@ -806,7 +808,7 @@ margin-left: 0px;
                 }
             }
             
-         @media (max-width: 450px) {
+            @media (max-width: 450px) {
                 .material-symbols-outlined.icon-right {
                     margin-left: 290px; /* Keep at 350px for smaller screens */
                 }
@@ -814,10 +816,9 @@ margin-left: 0px;
     
             @media (max-width: 400px) {
                 .material-symbols-outlined.icon-right {
-                    margin-left: 260px; /* Keep at 350px for smaller screens */
+                    margin-left: 270px; /* Keep at 350px for smaller screens */
                 }
             }
-    
     
     /* Show SVG and adjust margin for different screen widths */
     @media (max-width: 1100px) {
@@ -909,3 +910,4 @@ margin-left: 0px;
     
                
          
+        
