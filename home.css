@@ -308,11 +308,8 @@ p {
 
 @media (max-width: 460px) {
     .img-box1 {
-        margin-left: 40px !important;
-margin-right:-15px !important; /* 95px - 10px */
-width:90% !important;
+        margin-left: 40px; /* 95px - 10px */
     }
-
 }
 /* Media queries for viewport widths 1000px and below */
 @media (max-width: 1000px) {
