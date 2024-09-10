@@ -369,6 +369,7 @@ margin-bottom: 20px;}
 
   
     @media (max-width: 1230px) {
+
     .left-top-side{
         margin-bottom: -20px;
         margin-top: 25px;
@@ -569,26 +570,7 @@ margin-bottom: 20px;}
 
 
 
-
-
-                @media (max-width: 450px) {
-                    .left-top-side{
-                        height: 90px;
-                        width:90px;
-                        margin-left:40px;
-                    }
-                
-                .right-down-side{
-                    height: 90px;
-                    width:90px;
-                    margin-left:275px;
-                }
-                .right-down-side1{
-                    height: 90px;
-                    width:90px;
-                    margin-left:275px;
-                }
-                    }
+       
     
 
 
@@ -696,10 +678,16 @@ margin-left: 0px;
         margin-left: -100px;
     }
 }
-@media (max-width: 440px) {
+
+@media (max-width: 400px) {
+    .h1 {
+        margin-left: -105px;
+    }
+}
+@media (max-width: 450px) {
 
 .header-container{width: 100%;}
-    .header-container2{margin-top: 980px ;
+    .header-container2{margin-top: 950px ;
         width: 100%;
     }}
 
@@ -816,13 +804,14 @@ margin-left: 0px;
     
             @media (max-width: 400px) {
                 .material-symbols-outlined.icon-right {
-                    margin-left: 260px; /* Keep at 350px for smaller screens */
+                    margin-left: 255px; /* Keep at 350px for smaller screens */
                 }
             }
     
     /* Show SVG and adjust margin for different screen widths */
     @media (max-width: 1100px) {
         .svg-icon {
+            margin-bottom: -3px !important ;
             display: inline-block;
             margin-left: -870px; /* Default margin for widths <= 1100px */
         }
@@ -902,12 +891,80 @@ margin-left: 0px;
     
     @media (max-width: 450px) {
         .svg-icon {
-            margin-left: -220px;
+            margin-left: -210px;
         }
     }
     
     /* Ensure the SVG icon is responsive */
+    @media (max-width: 450px) {
+        .menu-slash1{
+            margin-top: 20px !important;
+        }
+
+      
+
+.menu-slash1, .menu-slash2 {
     
-               
-         
+            width: 400px;
+            margin-left: 1px !important;
+        }
+  
+      
+            .header-container2{margin-top: 700px ;}
+
+        .left-top-side{
+            height: 90px;
+            width:90px;
+            margin-left:50px;
+        }
+    
+    
+    .right-down-side{
+        margin-top: -45px;
+        height: 90px;
+        width:90px;
+        margin-left:265px;
+    }
+    .right-down-side1{
+        margin-top: -45px;
+        height: 90px;
+        width:90px;
+        margin-left:265px;
+    }
+        }
+
+        @media (max-width: 400px) {
+            .menu-slash1{
+                margin-top: 25px !important;
+            }
+    
+          
+    
+    .menu-slash1, .menu-slash2 {
         
+                width: 360px;
+                margin-left: -2px !important;
+            }
+
+
+            .header-container2{margin-top: 720px ;}
+
+            .left-top-side{
+                height: 70px;
+                width:70px;
+                margin-left:50px;
+            }
+        
+        
+        .right-down-side{
+            margin-top: -45px;
+            height: 90px;
+            width:90px;
+            margin-left:245px;
+        }
+        .right-down-side1{
+            margin-top: -45px;
+            height: 90px;
+            width:90px;
+            margin-left:245px;
+        }}
