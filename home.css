@@ -592,10 +592,10 @@ p {
     
            @media (max-width: 400px) {
             .welcome-button{
-                margin-left: 27%;
+                margin-left: 47%;
             }
             .welcome-button2{
-              
+                 margin-left: 27%;
                     margin-top: 7px;
                 
             }
