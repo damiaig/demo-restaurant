@@ -923,13 +923,13 @@ margin-left: 0px;
         margin-top: -45px;
         height: 90px;
         width:90px;
-        margin-left:265px;
+        margin-left:273px;
     }
     .right-down-side1{
         margin-top: -45px;
         height: 90px;
         width:90px;
-        margin-left:265px;
+        margin-left:273px;
     }
         }
 
@@ -958,14 +958,14 @@ margin-left: 0px;
         
         .right-down-side{
             margin-top: -45px !important;
-            height: 90px !important;
-            width:90px !important;
+            height: 70px !important;
+            width:70px !important;
             margin-left:245px !important;
         }
         .right-down-side1{
             margin-top: -45px !important;
-            height: 90px !important;
-            width:90px !important;
+            height: 70px !important;
+            width:70px !important;
             margin-left:245px !important;
         }}
 
@@ -974,5 +974,13 @@ margin-left: 0px;
                 .hh2 .header-container2{margin-top: 840px !important;}
     
            
+                
+        }
+
+
+      @media (max-width: 750px) {
+                .menu-box{
+                   background-image: none;
+                    background:white  !important;}
                 
         }
