@@ -363,7 +363,7 @@ padding: 20px;
 
 
 
-  
+    
 .svg-icon{
     margin-top: 1px;
         display: none;
@@ -468,10 +468,15 @@ padding: 20px;
             
             @media (max-width: 450px) {
                 .material-symbols-outlined.icon-right {
-                    margin-left: 320px; /* Keep at 350px for smaller screens */
+                    margin-left: 290px; /* Keep at 350px for smaller screens */
                 }
             }
     
+            @media (max-width: 400px) {
+                .material-symbols-outlined.icon-right {
+                    margin-left: 255px; /* Keep at 350px for smaller screens */
+                }
+            }
     
     /* Show SVG and adjust margin for different screen widths */
     @media (max-width: 1100px) {
@@ -556,12 +561,9 @@ padding: 20px;
     
     @media (max-width: 450px) {
         .svg-icon {
-            margin-left: -220px;
+            margin-left: -210px;
         }
     }
-    
-    /* Ensure the SVG icon is responsive */
-    
                
          
         
