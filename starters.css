@@ -968,3 +968,11 @@ margin-left: 0px;
             width:90px !important;
             margin-left:245px !important;
         }}
+
+
+ @media (max-width: 400px) {
+                .hh2 .header-container2{margin-top: 790px ;}
+    
+           
+                
+        }
